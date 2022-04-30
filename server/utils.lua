@@ -1,15 +1,15 @@
 QBCore = exports['qb-core']:GetCoreObject()
 
 function getSocietyMoney()
-    return exports['qb-bossmenu']:GetAccount('hookahlounge')
+    return exports['qb-management']:GetAccount('hookahlounge')
 end
 
 function addSocietyMoney(money)
-    TriggerEvent('qb-bossmenu:server:addAccountMoney', "hookahlounge", money)
+	exports['qb-management']:AddMoney("hookahlounge", money)
 end
 
 function removeSocietyMoney(money)
-	TriggerEvent('qb-bossmenu:server:removeAccountMoney', "hookahlounge", money)
+	exports['qb-management']:RemoveMoney("hookahlounge", money)
 end
 
 function CanCarryItem(id, item, amount)
