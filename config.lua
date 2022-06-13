@@ -2,7 +2,6 @@ Config = {}
 Config.Locale = 'en'
 
 Config.PatreonEmail = 'Your Patron Email'               --Take authorization with your patreon email.
-Config.SharedObjectName = 'esx:getSharedObject'         --Change if you Shared Object Name is different
 
 Config.CheckCanCarryItem = true                         --Enable to check inventory
 Config.UseProgressBar = true                            --Set your progress bar in utils.lua then enable this
